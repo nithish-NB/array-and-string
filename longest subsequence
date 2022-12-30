@@ -17,14 +17,7 @@ Set<Integer> hashset= new HashSet<Integer>();
         }
     return longs;
     -
-    -
-    -
-    -
-    -
-    -
-    -
-    
-    -
+######################################################################################################################
     public int longestConsecutive(int[] num) {
   int max = 0;
   
