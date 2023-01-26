@@ -1,0 +1,27 @@
+int max=0;
+int p=0;
+for(int i=0;i<prices.length-1;i++){
+    for(int j=i+1;j<prices.length;j++){
+if( prices[j]>prices[i]){
+p= prices[j]-prices[i];
+}
+max= Math.max(p,max);
+    }
+}
+
+    return max;}
+} 
+#########################################
+ /*int prof=0;
+ int ls=Integer.MAX_VALUE;
+ int p=0;
+ for(int i=0;i<prices.length;i++){
+     if(prices[i]<ls){
+         ls= prices[i];
+     }
+     p=prices[i]-ls;
+     if( p>prof){
+         prof= p;
+     }
+ }
+return prof;
