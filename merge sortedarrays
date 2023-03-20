@@ -1,6 +1,8 @@
+TC:O(m+n)+O(M)+O(N)
+SC:O(N)
+in this approach we will start comparing elements from left to right
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-       /* int k= m+n;
         int arr[] = new int[k];
         int l=0;
         int i=0;
@@ -32,6 +34,9 @@ for(int h=0;h<nums1.length;h++){
 }     
 */
 #########################################################################
+TC:O(m+n)+O(N)
+SC:O(1)
+In this approach we compare elements from right to left 
 int i= m+n-1;
 int a= m-1;
 int b= n-1;
@@ -50,3 +55,4 @@ while(b>=0){
     }
     }
 }
+
