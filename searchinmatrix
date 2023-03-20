@@ -1,5 +1,6 @@
- 
- **int** m= matrix.length;
+ TC:O(M*N);
+ SC:O(1)
+ int m= matrix.length;
         int n= matrix[0].length;
         for(int i=0;i<m;i++){
             for(int j=0;j<n;j++){
@@ -9,3 +10,52 @@
             }
         }
     return false;}
+#######################################################################
+TC:O(N*LOGM);
+ SC:O(1)
+ if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+        return false;
+    }
+    int row = 0;
+    int col = matrix[0].length - 1;
+    while (row < matrix.length && col >= 0) {
+        if (matrix[row][col] == target) {
+            return true;
+        } else if (matrix[row][col] < target) {
+            row++;
+        } else {
+            col--;
+        }
+    }
+    return false;
+}
+}
+############################################################################################
+TC:O(N*M);
+SC:O(N)
+int m= matrix.length;
+    int n= matrix[0].length;
+    int [] arr= new int[m*n];
+    int k=0;
+    for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                arr[k++]=matrix[i][j];
+            }
+        }
+        int l=0;
+        int r=arr.length-1;
+        while(l<=r){
+            int mid=l+(r-l)/2;
+            if(arr[mid]==target){
+                return true;
+            }
+            else if(arr[mid]<target){
+                l= mid+1;
+            }else{
+                r= mid-1;
+            }
+        }
+return false;}
+}
+###############################################################################################
+
