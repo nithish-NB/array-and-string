@@ -1,3 +1,5 @@
+TC:O(N2)+O(N2)
+SC:O(1)
 class Solution {
     public void rotate(int[][] matrix) {
       
@@ -21,6 +23,8 @@ class Solution {
     }
 }
 ##############################################################################
+TC:0(N2)
+SC:0(N2)
 class Solution {
     /*
     Brute-Force:
